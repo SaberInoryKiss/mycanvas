@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="500" style="border:1px solid #d3d3d3;"></canvas><!-- 创建画布 -->
+	</body>
+	<script>
+		var c=document.getElementById("canvas");
+		var ctx=c.getContext("2d");
+            ctx.ellipse(400,250,300,200,0,0,Math.PI*2);
+            ctx.fillStyle="#058";
+            ctx.strokeStyle="#000";
+            ctx.fill();
+            ctx.stroke();/* 目前仅Chrome支持 */
+	</script>
+</html>

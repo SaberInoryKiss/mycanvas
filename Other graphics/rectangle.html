@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!--参考菜鸟教程 http://www.runoob.com/html/html5-canvas.html -->
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="500" style="border:1px solid #d3d3d3;"></canvas><!-- 创建画布 -->
+	</body>
+	<script>
+		var c=document.getElementById("canvas");
+		var ctx=c.getContext("2d");
+		ctx.beginPath();
+		ctx.strokeStyle = '#09f';
+		ctx.rect( 50, 50, 500, 300 );
+		ctx.stroke();
+	</script>
+</html>
+

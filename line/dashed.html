@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 参考https://blog.csdn.net/u010513756/article/details/47452337 -->
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="500" style="border:1px solid #d3d3d3;"></canvas><!-- 创建画布 -->
+	</body>
+	<script type="text/javascript">
+		
+			var c=document.getElementById("canvas");/* 找到 <canvas> 元素 */
+			var ctx=c.getContext("2d");/* 创建 context 对象 */
+			ctx.lineWidth = 4;
+
+			ctx.strokeStyle = 'blue';
+			ctx.beginPath();
+			ctx.setLineDash([20, 5]);
+			ctx.moveTo(20, 40);
+			ctx.lineTo(380, 40);
+			ctx.stroke();
+
+			ctx.strokeStyle = 'green';
+			ctx.beginPath();
+			ctx.setLineDash([10, 20, 30]);
+			ctx.moveTo(20, 80);
+			ctx.lineTo(380, 80);
+			ctx.stroke();
+
+			ctx.strokeStyle = 'red';
+			ctx.beginPath();
+			ctx.setLineDash([10, 20, 30, 40]);
+			ctx.moveTo(20, 120);
+			ctx.lineTo(380, 120);
+			ctx.stroke();
+		
+	</script>
+</html>
